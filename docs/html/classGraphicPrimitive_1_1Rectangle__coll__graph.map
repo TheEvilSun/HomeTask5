@@ -1,0 +1,5 @@
+<map id="GraphicPrimitive::Rectangle" name="GraphicPrimitive::Rectangle">
+<area shape="rect" id="Node000001" title="Прямоугольник" alt="" coords="5,79,209,104"/>
+<area shape="rect" id="Node000002" href="$classGraphicPrimitive_1_1Figure.html" title="Интерфейс графического примитива" alt="" coords="18,5,197,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="110,44,110,79,105,79,105,44"/>
+</map>

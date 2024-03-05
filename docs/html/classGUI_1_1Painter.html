@@ -1,0 +1,430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HomeTask5: Класс GUI::Painter</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">HomeTask5
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespaceGUI.html">GUI</a></li><li class="navelem"><a class="el" href="classGUI_1_1Painter.html">Painter</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="classGUI_1_1Painter-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс GUI::Painter</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс художника  
+ <a href="#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Painter_8h_source.html">Painter.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a40a7951035912848695e86d1c76ea3d8" id="r_a40a7951035912848695e86d1c76ea3d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40a7951035912848695e86d1c76ea3d8">clearAll</a> ()</td></tr>
+<tr class="separator:a40a7951035912848695e86d1c76ea3d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44a6f233bf1a34cbf23818c9acc6ce2f" id="r_a44a6f233bf1a34cbf23818c9acc6ce2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a44a6f233bf1a34cbf23818c9acc6ce2f">clearArea</a> (const <a class="el" href="structGUI_1_1Area.html">Area</a> &amp;area)</td></tr>
+<tr class="separator:a44a6f233bf1a34cbf23818c9acc6ce2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04c4f659a58e794eefee2d45a8e64ebc" id="r_a04c4f659a58e794eefee2d45a8e64ebc"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classGUI_1_1Canvas.html">Canvas</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04c4f659a58e794eefee2d45a8e64ebc">canvas</a> () const</td></tr>
+<tr class="separator:a04c4f659a58e794eefee2d45a8e64ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57e0ad4c27872b00af696107e57c9e55" id="r_a57e0ad4c27872b00af696107e57c9e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57e0ad4c27872b00af696107e57c9e55">setCanvas</a> (const std::shared_ptr&lt; <a class="el" href="classGUI_1_1Canvas.html">Canvas</a> &gt; &amp;<a class="el" href="#a04c4f659a58e794eefee2d45a8e64ebc">canvas</a>)</td></tr>
+<tr class="separator:a57e0ad4c27872b00af696107e57c9e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab42d01264824dc4e31cd179091e76059" id="r_ab42d01264824dc4e31cd179091e76059"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGUI_1_1Area.html">Area</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab42d01264824dc4e31cd179091e76059">drawFigure</a> (const <a class="el" href="classGraphicPrimitive_1_1Line.html">GraphicPrimitive::Line</a> &amp;line)</td></tr>
+<tr class="separator:ab42d01264824dc4e31cd179091e76059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1bfa406071edceb169edec144c34714" id="r_ae1bfa406071edceb169edec144c34714"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGUI_1_1Area.html">Area</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1bfa406071edceb169edec144c34714">drawFigure</a> (const <a class="el" href="classGraphicPrimitive_1_1Rectangle.html">GraphicPrimitive::Rectangle</a> &amp;rectangle)</td></tr>
+<tr class="separator:ae1bfa406071edceb169edec144c34714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56da8564dd646a43218ef1bfe8099662" id="r_a56da8564dd646a43218ef1bfe8099662"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGUI_1_1Area.html">Area</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56da8564dd646a43218ef1bfe8099662">drawFigure</a> (const <a class="el" href="classGraphicPrimitive_1_1Square.html">GraphicPrimitive::Square</a> &amp;square)</td></tr>
+<tr class="separator:a56da8564dd646a43218ef1bfe8099662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a002bec09a331a4014ed12159ecc456cc" id="r_a002bec09a331a4014ed12159ecc456cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGUI_1_1Area.html">Area</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a002bec09a331a4014ed12159ecc456cc">drawFigure</a> (const <a class="el" href="classGraphicPrimitive_1_1Circle.html">GraphicPrimitive::Circle</a> &amp;circle)</td></tr>
+<tr class="separator:a002bec09a331a4014ed12159ecc456cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66eaf68e3f379a990d2f5147b6fa638" id="r_ab66eaf68e3f379a990d2f5147b6fa638"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGUI_1_1Area.html">Area</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab66eaf68e3f379a990d2f5147b6fa638">drawFigure</a> (const <a class="el" href="classGraphicPrimitive_1_1Ellipse.html">GraphicPrimitive::Ellipse</a> &amp;ellipse)</td></tr>
+<tr class="separator:ab66eaf68e3f379a990d2f5147b6fa638"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс художника </p>
+<p>Класс художника, отрисовывает графические примитивы на холсте </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a04c4f659a58e794eefee2d45a8e64ebc" name="a04c4f659a58e794eefee2d45a8e64ebc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04c4f659a58e794eefee2d45a8e64ebc">&#9670;&#160;</a></span>canvas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt; <a class="el" href="classGUI_1_1Canvas.html">Canvas</a> &gt; GUI::Painter::canvas </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Возвращает указатель на холст, который используется для рисования </p><dl class="section return"><dt>Возвращает</dt><dd><em>std::shared_ptr&lt;Canvas&gt;</em> </dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGUI_1_1Painter_a04c4f659a58e794eefee2d45a8e64ebc_icgraph.png" border="0" usemap="#aclassGUI_1_1Painter_a04c4f659a58e794eefee2d45a8e64ebc_icgraph" alt=""/></div>
+<map name="aclassGUI_1_1Painter_a04c4f659a58e794eefee2d45a8e64ebc_icgraph" id="aclassGUI_1_1Painter_a04c4f659a58e794eefee2d45a8e64ebc_icgraph">
+<area shape="rect" title=" " alt="" coords="228,5,381,31"/>
+<area shape="rect" href="classGUI_1_1Painter.html#a57e0ad4c27872b00af696107e57c9e55" title=" " alt="" coords="5,5,180,31"/>
+<area shape="poly" title=" " alt="" coords="214,21,180,21,180,15,214,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a40a7951035912848695e86d1c76ea3d8" name="a40a7951035912848695e86d1c76ea3d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40a7951035912848695e86d1c76ea3d8">&#9670;&#160;</a></span>clearAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GUI::Painter::clearAll </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Очищает весь холст </p><dl class="section return"><dt>Возвращает</dt><dd><em>void</em> </dd></dl>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGUI_1_1Painter_a40a7951035912848695e86d1c76ea3d8_icgraph.png" border="0" usemap="#aclassGUI_1_1Painter_a40a7951035912848695e86d1c76ea3d8_icgraph" alt=""/></div>
+<map name="aclassGUI_1_1Painter_a40a7951035912848695e86d1c76ea3d8_icgraph" id="aclassGUI_1_1Painter_a40a7951035912848695e86d1c76ea3d8_icgraph">
+<area shape="rect" title=" " alt="" coords="220,5,376,31"/>
+<area shape="rect" href="classGUI_1_1View.html#a0a0ab16cce2b46fd937e27c259ccd932" title=" " alt="" coords="5,5,172,31"/>
+<area shape="poly" title=" " alt="" coords="206,21,172,21,172,15,206,15"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a44a6f233bf1a34cbf23818c9acc6ce2f" name="a44a6f233bf1a34cbf23818c9acc6ce2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44a6f233bf1a34cbf23818c9acc6ce2f">&#9670;&#160;</a></span>clearArea()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GUI::Painter::clearArea </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structGUI_1_1Area.html">Area</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>area</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Очищает указанную область холста </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">area</td><td>область очистки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><em>void</em> </dd></dl>
+
+</div>
+</div>
+<a id="a002bec09a331a4014ed12159ecc456cc" name="a002bec09a331a4014ed12159ecc456cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a002bec09a331a4014ed12159ecc456cc">&#9670;&#160;</a></span>drawFigure() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structGUI_1_1Area.html">Area</a> GUI::Painter::drawFigure </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classGraphicPrimitive_1_1Circle.html">GraphicPrimitive::Circle</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>circle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Отрисовка окружности, возвращает прямоугольную область, в которую вписана окружность </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">circle</td><td>окружность </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><em><a class="el" href="structGUI_1_1Area.html" title="Класс прямоугольной области">Area</a></em> </dd></dl>
+
+</div>
+</div>
+<a id="ab66eaf68e3f379a990d2f5147b6fa638" name="ab66eaf68e3f379a990d2f5147b6fa638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66eaf68e3f379a990d2f5147b6fa638">&#9670;&#160;</a></span>drawFigure() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structGUI_1_1Area.html">Area</a> GUI::Painter::drawFigure </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classGraphicPrimitive_1_1Ellipse.html">GraphicPrimitive::Ellipse</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ellipse</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Отрисовка эллипса, возвращает прямоугольную область, в которую вписан эллипс </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ellipse</td><td>эллипс </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><em><a class="el" href="structGUI_1_1Area.html" title="Класс прямоугольной области">Area</a></em> </dd></dl>
+
+</div>
+</div>
+<a id="ab42d01264824dc4e31cd179091e76059" name="ab42d01264824dc4e31cd179091e76059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab42d01264824dc4e31cd179091e76059">&#9670;&#160;</a></span>drawFigure() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structGUI_1_1Area.html">Area</a> GUI::Painter::drawFigure </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classGraphicPrimitive_1_1Line.html">GraphicPrimitive::Line</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>line</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Отрисовка отрезка, возвращает прямоугольную область, в которую вписан отрезок </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>отрезок </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><em><a class="el" href="structGUI_1_1Area.html" title="Класс прямоугольной области">Area</a></em> </dd></dl>
+
+</div>
+</div>
+<a id="ae1bfa406071edceb169edec144c34714" name="ae1bfa406071edceb169edec144c34714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1bfa406071edceb169edec144c34714">&#9670;&#160;</a></span>drawFigure() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structGUI_1_1Area.html">Area</a> GUI::Painter::drawFigure </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classGraphicPrimitive_1_1Rectangle.html">GraphicPrimitive::Rectangle</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>rectangle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Отрисовка прямоугольника, возвращает прямоугольную область, в которую вписан прямоугольник </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rectangle</td><td>прямоугольник </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><em><a class="el" href="structGUI_1_1Area.html" title="Класс прямоугольной области">Area</a></em> </dd></dl>
+
+</div>
+</div>
+<a id="a56da8564dd646a43218ef1bfe8099662" name="a56da8564dd646a43218ef1bfe8099662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56da8564dd646a43218ef1bfe8099662">&#9670;&#160;</a></span>drawFigure() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structGUI_1_1Area.html">Area</a> GUI::Painter::drawFigure </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classGraphicPrimitive_1_1Square.html">GraphicPrimitive::Square</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>square</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Отрисовка квадрата, возвращает прямоугольную область, в которую вписан квадрат </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">square</td><td>квадрат </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><em><a class="el" href="structGUI_1_1Area.html" title="Класс прямоугольной области">Area</a></em> </dd></dl>
+
+</div>
+</div>
+<a id="a57e0ad4c27872b00af696107e57c9e55" name="a57e0ad4c27872b00af696107e57c9e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57e0ad4c27872b00af696107e57c9e55">&#9670;&#160;</a></span>setCanvas()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GUI::Painter::setCanvas </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classGUI_1_1Canvas.html">Canvas</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>canvas</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Устанавливает холс, на котором будет происходить отрисовка </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">canvas</td><td>указатель на холст </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd><em>void</em> </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGUI_1_1Painter_a57e0ad4c27872b00af696107e57c9e55_cgraph.png" border="0" usemap="#aclassGUI_1_1Painter_a57e0ad4c27872b00af696107e57c9e55_cgraph" alt=""/></div>
+<map name="aclassGUI_1_1Painter_a57e0ad4c27872b00af696107e57c9e55_cgraph" id="aclassGUI_1_1Painter_a57e0ad4c27872b00af696107e57c9e55_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,180,31"/>
+<area shape="rect" href="classGUI_1_1Painter.html#a04c4f659a58e794eefee2d45a8e64ebc" title=" " alt="" coords="228,5,381,31"/>
+<area shape="poly" title=" " alt="" coords="180,15,214,15,214,21,180,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>GUI/<a class="el" href="Painter_8h_source.html">Painter.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

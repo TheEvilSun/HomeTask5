@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HomeTask5: Исходный файл GraphicPrimitivesModel/GraphicPrimitivesModel.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">HomeTask5
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_cc291a9bfacbc13b201e1ae417839419.html">GraphicPrimitivesModel</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">GraphicPrimitivesModel.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;GraphicPrimitives/GraphicPrimitives.h&quot;</span></div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="namespaceModel.html">   18</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceModel.html">Model</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="namespaceModel.html#a75a3865f876b0ebb1a8c546e272e160f">   20</a></span><span class="keyword">using </span><a class="code hl_typedef" href="namespaceModel.html#a75a3865f876b0ebb1a8c546e272e160f">CallbackType</a> = std::function&lt;void(<span class="keywordtype">size_t</span>)&gt;; </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="classModel_1_1GraphicPrimitivesModel.html">   27</a></span><span class="keyword">class </span><a class="code hl_class" href="classModel_1_1GraphicPrimitivesModel.html">GraphicPrimitivesModel</a> {    </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    std::list&lt;std::shared_ptr&lt;GraphicPrimitive::Figure&gt;&gt; m_figures;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    std::map&lt;size_t, CallbackType&gt; m_figureAddedCallbacks;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    std::map&lt;size_t, CallbackType&gt; m_figureRemovedCallbacks;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_class" href="classModel_1_1GraphicPrimitivesModel.html">GraphicPrimitivesModel</a>() {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_class" href="classModel_1_1GraphicPrimitivesModel.html">GraphicPrimitivesModel</a>(std::list&lt;std::shared_ptr&lt;GraphicPrimitive::Figure&gt;&gt;&amp;&amp; figures) : m_figures(figures){</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classModel_1_1GraphicPrimitivesModel.html#a088b3388020fd856c378e3a482a84802">   44</a></span>    std::shared_ptr&lt;GraphicPrimitive::Figure&gt; <a class="code hl_function" href="classModel_1_1GraphicPrimitivesModel.html#a088b3388020fd856c378e3a482a84802">data</a>(<span class="keywordtype">size_t</span> index) {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">if</span>(index &gt;= m_figures.size()) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keywordflow">return</span> std::make_shared&lt;GraphicPrimitive::InvalidFigure&gt;();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">return</span> *std::next(m_figures.begin(), index);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Figure&gt;</div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="classModel_1_1GraphicPrimitivesModel.html#ab8c1425094050a42ba017d3819be6b44">   58</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classModel_1_1GraphicPrimitivesModel.html#ab8c1425094050a42ba017d3819be6b44">addFigure</a>(<span class="keyword">const</span> Figure&amp; figure) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        m_figures.push_back(std::make_shared&lt;Figure&gt;(figure));</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        figureAdded(m_figures.size() - 1);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
+</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="foldopen" id="foldopen00068" data-start="{" data-end="}">
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="classModel_1_1GraphicPrimitivesModel.html#a5b4fa3278e24c1cdd52c262685ce49ce">   68</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classModel_1_1GraphicPrimitivesModel.html#a5b4fa3278e24c1cdd52c262685ce49ce">removeFigure</a>(<span class="keywordtype">size_t</span> index) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">if</span>(index &gt;= m_figures.size()) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        m_figures.erase(std::next(m_figures.begin(), index));</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        figureRemoved(index);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="foldopen" id="foldopen00081" data-start="{" data-end="}">
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classModel_1_1GraphicPrimitivesModel.html#ae9c73b5ab10d7a89c0dd726d284283ca">   81</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="classModel_1_1GraphicPrimitivesModel.html#ae9c73b5ab10d7a89c0dd726d284283ca">count</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">return</span> m_figures.size();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    }</div>
+</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="foldopen" id="foldopen00090" data-start="{" data-end="}">
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classModel_1_1GraphicPrimitivesModel.html#a35ef1ce84c60f2b4e32bdac3163c7e4b">   90</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="classModel_1_1GraphicPrimitivesModel.html#a35ef1ce84c60f2b4e32bdac3163c7e4b">connectToAddFigure</a>(<a class="code hl_typedef" href="namespaceModel.html#a75a3865f876b0ebb1a8c546e272e160f">CallbackType</a> callback) {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keyword">auto</span> index = m_figureAddedCallbacks.size();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        m_figureAddedCallbacks[index] = callback;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">return</span> index;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
+</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="foldopen" id="foldopen00101" data-start="{" data-end="}">
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classModel_1_1GraphicPrimitivesModel.html#a5d385068c7a5cc1abdc7a2f784a62a31">  101</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classModel_1_1GraphicPrimitivesModel.html#a5d385068c7a5cc1abdc7a2f784a62a31">disconnectToAddFigure</a>(<span class="keywordtype">size_t</span> index) {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">return</span> m_figureAddedCallbacks.erase(index);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
+</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="foldopen" id="foldopen00110" data-start="{" data-end="}">
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classModel_1_1GraphicPrimitivesModel.html#aa0c97425660fa220d6d7594f0dd40ad9">  110</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="classModel_1_1GraphicPrimitivesModel.html#aa0c97425660fa220d6d7594f0dd40ad9">connectToRemoveFigure</a>(<a class="code hl_typedef" href="namespaceModel.html#a75a3865f876b0ebb1a8c546e272e160f">CallbackType</a> callback) {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keyword">auto</span> index = m_figureRemovedCallbacks.size();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        m_figureRemovedCallbacks[index] = callback;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keywordflow">return</span> index;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
+</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="foldopen" id="foldopen00121" data-start="{" data-end="}">
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="classModel_1_1GraphicPrimitivesModel.html#a0339fbdd6c51a4a4a9c4d61adacc22ad">  121</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classModel_1_1GraphicPrimitivesModel.html#a0339fbdd6c51a4a4a9c4d61adacc22ad">disconnectToRemoveFigure</a>(<span class="keywordtype">size_t</span> index) {</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">return</span> m_figureRemovedCallbacks.erase(index);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
+</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordtype">void</span> figureAdded(<span class="keywordtype">size_t</span> index) {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; callback : m_figureAddedCallbacks) {</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            callback.second(index);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    <span class="keywordtype">void</span> figureRemoved(<span class="keywordtype">size_t</span> index) {</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; callback : m_figureRemovedCallbacks) {</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            callback.second(index);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        }</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    }</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>};</div>
+</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>}</div>
+</div>
+<div class="ttc" id="aclassModel_1_1GraphicPrimitivesModel_html"><div class="ttname"><a href="classModel_1_1GraphicPrimitivesModel.html">Model::GraphicPrimitivesModel</a></div><div class="ttdoc">Классы модели для работы с графическими притивами</div><div class="ttdef"><b>Definition</b> GraphicPrimitivesModel.h:27</div></div>
+<div class="ttc" id="aclassModel_1_1GraphicPrimitivesModel_html_a0339fbdd6c51a4a4a9c4d61adacc22ad"><div class="ttname"><a href="classModel_1_1GraphicPrimitivesModel.html#a0339fbdd6c51a4a4a9c4d61adacc22ad">Model::GraphicPrimitivesModel::disconnectToRemoveFigure</a></div><div class="ttdeci">bool disconnectToRemoveFigure(size_t index)</div><div class="ttdef"><b>Definition</b> GraphicPrimitivesModel.h:121</div></div>
+<div class="ttc" id="aclassModel_1_1GraphicPrimitivesModel_html_a088b3388020fd856c378e3a482a84802"><div class="ttname"><a href="classModel_1_1GraphicPrimitivesModel.html#a088b3388020fd856c378e3a482a84802">Model::GraphicPrimitivesModel::data</a></div><div class="ttdeci">std::shared_ptr&lt; GraphicPrimitive::Figure &gt; data(size_t index)</div><div class="ttdef"><b>Definition</b> GraphicPrimitivesModel.h:44</div></div>
+<div class="ttc" id="aclassModel_1_1GraphicPrimitivesModel_html_a35ef1ce84c60f2b4e32bdac3163c7e4b"><div class="ttname"><a href="classModel_1_1GraphicPrimitivesModel.html#a35ef1ce84c60f2b4e32bdac3163c7e4b">Model::GraphicPrimitivesModel::connectToAddFigure</a></div><div class="ttdeci">size_t connectToAddFigure(CallbackType callback)</div><div class="ttdef"><b>Definition</b> GraphicPrimitivesModel.h:90</div></div>
+<div class="ttc" id="aclassModel_1_1GraphicPrimitivesModel_html_a5b4fa3278e24c1cdd52c262685ce49ce"><div class="ttname"><a href="classModel_1_1GraphicPrimitivesModel.html#a5b4fa3278e24c1cdd52c262685ce49ce">Model::GraphicPrimitivesModel::removeFigure</a></div><div class="ttdeci">void removeFigure(size_t index)</div><div class="ttdef"><b>Definition</b> GraphicPrimitivesModel.h:68</div></div>
+<div class="ttc" id="aclassModel_1_1GraphicPrimitivesModel_html_a5d385068c7a5cc1abdc7a2f784a62a31"><div class="ttname"><a href="classModel_1_1GraphicPrimitivesModel.html#a5d385068c7a5cc1abdc7a2f784a62a31">Model::GraphicPrimitivesModel::disconnectToAddFigure</a></div><div class="ttdeci">bool disconnectToAddFigure(size_t index)</div><div class="ttdef"><b>Definition</b> GraphicPrimitivesModel.h:101</div></div>
+<div class="ttc" id="aclassModel_1_1GraphicPrimitivesModel_html_aa0c97425660fa220d6d7594f0dd40ad9"><div class="ttname"><a href="classModel_1_1GraphicPrimitivesModel.html#aa0c97425660fa220d6d7594f0dd40ad9">Model::GraphicPrimitivesModel::connectToRemoveFigure</a></div><div class="ttdeci">size_t connectToRemoveFigure(CallbackType callback)</div><div class="ttdef"><b>Definition</b> GraphicPrimitivesModel.h:110</div></div>
+<div class="ttc" id="aclassModel_1_1GraphicPrimitivesModel_html_ab8c1425094050a42ba017d3819be6b44"><div class="ttname"><a href="classModel_1_1GraphicPrimitivesModel.html#ab8c1425094050a42ba017d3819be6b44">Model::GraphicPrimitivesModel::addFigure</a></div><div class="ttdeci">void addFigure(const Figure &amp;figure)</div><div class="ttdef"><b>Definition</b> GraphicPrimitivesModel.h:58</div></div>
+<div class="ttc" id="aclassModel_1_1GraphicPrimitivesModel_html_ae9c73b5ab10d7a89c0dd726d284283ca"><div class="ttname"><a href="classModel_1_1GraphicPrimitivesModel.html#ae9c73b5ab10d7a89c0dd726d284283ca">Model::GraphicPrimitivesModel::count</a></div><div class="ttdeci">size_t count() const</div><div class="ttdef"><b>Definition</b> GraphicPrimitivesModel.h:81</div></div>
+<div class="ttc" id="anamespaceModel_html"><div class="ttname"><a href="namespaceModel.html">Model</a></div><div class="ttdoc">Классы моделей для хранения графических примитивов</div><div class="ttdef"><b>Definition</b> GraphicPrimitivesModel.h:18</div></div>
+<div class="ttc" id="anamespaceModel_html_a75a3865f876b0ebb1a8c546e272e160f"><div class="ttname"><a href="namespaceModel.html#a75a3865f876b0ebb1a8c546e272e160f">Model::CallbackType</a></div><div class="ttdeci">std::function&lt; void(size_t)&gt; CallbackType</div><div class="ttdoc">тип callback-а</div><div class="ttdef"><b>Definition</b> GraphicPrimitivesModel.h:20</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

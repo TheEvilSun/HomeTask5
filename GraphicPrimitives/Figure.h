@@ -4,30 +4,44 @@
 #include "Point.h"
 
 namespace GraphicPrimitive {
-
+/// Набор возможных стилей кисти
 enum class PenType {
-    None,
-    Solid,
-    Dash,
-    Dot
+    None,  ///< Тип отсутствует
+    Solid, ///< Сплошная линия
+    Dash,  ///< Пунктирная линия
+    Dot    ///< Линия из точек
 };
 
+/// Набор возможных стилей заливки
 enum class BrushType {
-    None,
-    Solid,
-    Horizontal,
-    Vertical
+    None,       ///< Тип отсутсвует
+    Solid,      ///< Сплошная заливка
+    Horizontal, ///< Горизонтальные линии
+    Vertical    ///< Вертикальные линии
 };
 
+/// Набор возможных типов графических примитивов
 enum class FigureType {
-    None,
-    Line,
-    Rectangle,
-    Circle,
-    Square,
-    Ellipse
+    None,       ///< Невалидный тип
+    Line,       ///< Отрезок
+    Rectangle,  ///< Прямоугольник
+    Circle,     ///< Окружность
+    Square,     ///< Квадрат
+    Ellipse     ///< Эллипс
 };
 
+/*!
+    \brief Интерфейс графического примитива
+
+    Базовый абстрактный класс графического примитива.
+
+    Содержит:
+    - цвет кисти
+    - тип кисти
+    - ширину кисти
+    - цвет заливки
+    - тип заливки
+*/
 class Figure {
     uint32_t m_penColor;
     PenType m_penType;
@@ -100,6 +114,11 @@ public:
     virtual FigureType type() const = 0;
 };
 
+/*!
+    \brief Невалидный графический примитив
+
+    Невалидный графический примитив, доступен только метод <i>type()</i>
+*/
 class InvalidFigure : public Figure {
 
 public:
@@ -133,6 +152,15 @@ public:
     }
 };
 
+/*!
+    \brief Отрезок
+
+    Графический примитив представляющий отрезок, не использует данные заливки
+
+    Содержит:
+    - координату начало отрезка
+    - координату конец отрезка
+*/
 class Line : public Figure {
     Point m_p1;
     Point m_p2;
@@ -160,11 +188,37 @@ public:
     PenType brushType() const = delete;
     void setBrushType(BrushType type) = delete;
 
+    Point p1() const {
+        return m_p1;
+    }
+
+    void setP1(const Point& point) {
+        m_p1 = point;
+    }
+
+    Point p2() const {
+        return m_p2;
+    }
+
+    void setP2(const Point& point) {
+        m_p2 = point;
+    }
+
     FigureType type() const override {
         return FigureType::Line;
     }
 };
 
+/*!
+    \brief Прямоугольник
+
+    Графический примитив представляющий прямоугольник
+
+    Содержит:
+    - координату верхнего левого угла
+    - ширину
+    - высоту
+*/
 class Rectangle : public Figure {
     Point m_corner;
     float m_width;
@@ -189,15 +243,47 @@ public:
 
     }
 
+    Point corner() const {
+        return m_corner;
+    }
+
+    void setCorner(const Point& point) {
+        m_corner = point;
+    }
+
+    float width() const {
+        return m_width;
+    }
+
+    void setWidth(float width) {
+        m_width = width;
+    }
+
+    float height() const {
+        return m_height;
+    }
+
+    void setHeight(float height) {
+        m_height = height;
+    }
+
     FigureType type() const override {
         return FigureType::Rectangle;
     }
 };
 
+/*!
+    \brief Окружность
+
+    Графический примитив представляющий окружность
+
+    Содержит:
+    - координату центра
+    - радиус
+*/
 class Circle : public Figure {
     Point m_center;
     float m_radius;
-
 public:
     Circle(Point center, float radius, uint32_t penColor, PenType penType, float penWidth, uint32_t brushColor, BrushType brushType) :
         Figure(penColor, penType, penWidth, brushColor, brushType),
@@ -215,15 +301,39 @@ public:
 
     }
 
+    Point center() const {
+        return m_center;
+    }
+
+    void setCenter(const Point& center) {
+        m_center = center;
+    }
+
+    float radius() const {
+        return m_radius;
+    }
+
+    void setRadius(float radius) {
+        m_radius = radius;
+    }
+
     FigureType type() const override {
         return FigureType::Circle;
     }
 };
 
+/*!
+    \brief Квадрат
+
+    Графический примитив представляющий квадрат
+
+    Содержит:
+    - координату верхнего левого угла
+    - ширину
+*/
 class Square : public Figure{
     Point m_corner;
     float m_width;
-
 public:
     Square(Point corner, float width, uint32_t penColor, PenType penType, float penWidth, uint32_t brushColor, BrushType brushType) :
         Figure(penColor, penType, penWidth, brushColor, brushType),
@@ -241,11 +351,37 @@ public:
 
     }
 
+    Point corner() const {
+        return m_corner;
+    }
+
+    void setCorner(const Point& point) {
+        m_corner = point;
+    }
+
+    float width() const {
+        return m_width;
+    }
+
+    void setWidth(float width) {
+        m_width = width;
+    }
+
     FigureType type() const override {
         return FigureType::Square;
     }
 };
 
+/*!
+    \brief Эллипс
+
+    Графический примитив представляющий эллипс
+
+    Содержит:
+    - координату центра
+    - радиус по оси x
+    - радиус по оси y
+*/
 class Ellipse : public Figure {
     Point m_center;
     float m_radiusX;
@@ -268,6 +404,30 @@ public:
         m_radiusY(other.m_radiusY)
     {
 
+    }
+
+    Point center() const {
+        return m_center;
+    }
+
+    void setCenter(const Point& center) {
+        m_center = center;
+    }
+
+    float radiusX() const {
+        return m_radiusX;
+    }
+
+    void setRadiusX(float radius) {
+        m_radiusX = radius;
+    }
+
+    float radiusY() const {
+        return m_radiusY;
+    }
+
+    void setRadiusY(float radius) {
+        m_radiusY = radius;
     }
 
     FigureType type() const override {

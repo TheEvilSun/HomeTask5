@@ -1,0 +1,15 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="Node000000" href="$classGraphicPrimitive_1_1Figure.html" title="Интерфейс графического примитива" alt="" coords="5,141,184,167"/>
+<area shape="rect" id="Node000001" href="$classGraphicPrimitive_1_1Circle.html" title="Окружность" alt="" coords="246,5,422,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="115,129,165,83,197,60,231,40,260,28,262,33,233,44,200,64,169,88,119,133"/>
+<area shape="rect" id="Node000002" href="$classGraphicPrimitive_1_1Ellipse.html" title="Эллипс" alt="" coords="243,55,425,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="132,133,231,90,274,78,275,83,233,95,134,137"/>
+<area shape="rect" id="Node000003" href="$classGraphicPrimitive_1_1InvalidFigure.html" title="Невалидный графический примитив" alt="" coords="243,105,425,145"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="197,139,242,133,243,138,198,144"/>
+<area shape="rect" id="Node000004" href="$classGraphicPrimitive_1_1Line.html" title="Отрезок" alt="" coords="251,169,417,195"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="198,163,251,170,250,175,197,169"/>
+<area shape="rect" id="Node000005" href="$classGraphicPrimitive_1_1Rectangle.html" title="Прямоугольник" alt="" coords="232,219,436,244"/>
+<area shape="poly" id="edge5_Node000000_Node000005" title=" " alt="" coords="140,169,233,203,278,216,276,221,231,209,138,174"/>
+<area shape="rect" id="Node000006" href="$classGraphicPrimitive_1_1Square.html" title="Квадрат" alt="" coords="242,268,426,293"/>
+<area shape="poly" id="edge6_Node000000_Node000006" title=" " alt="" coords="121,174,171,214,233,253,267,265,265,270,231,258,167,219,118,178"/>
+</map>

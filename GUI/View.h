@@ -5,6 +5,11 @@
 
 namespace GUI {
 
+/*!
+\brief Класс графического представления геометрических примитивов
+
+Класс, который позволяют отображать графические примитивы, находящиеся в модели. Синхронизируется осуществляется через callback-и
+*/
 class View {
     uint32_t m_width;
     uint32_t m_height;
@@ -26,6 +31,11 @@ public:
         resetModel();
     }
 
+ /*!
+Связывает объект с моделью, подключает callback-и
+\param model модель
+\return <i>void</i>
+*/
     void setModel(const std::shared_ptr<Model::GraphicPrimitivesModel>& model) {
         if(!model) {
             return;
@@ -40,6 +50,10 @@ public:
         }
     }
 
+ /*!
+Отвязывает объект от установленной модели, отключает callback-и
+\return <i>void</i>
+*/
     void resetModel() {
         if(!m_model) {
             return;
@@ -53,6 +67,11 @@ public:
     }
 
 private:
+ /*!
+Добавляет отображение графического примитива
+\param index индекс графического примитива
+\return <i>void</i>
+*/
     void addFigure(size_t index) {
         auto figure = m_model->data(index);
 
@@ -64,6 +83,11 @@ private:
         }
     }
 
+ /*!
+Удаляет отображение графического примитива
+\param index индекс графического примитива
+\return <i>void</i>
+*/
     void removeFigure(size_t index) {
         auto removedAreaItr = std::next(m_renderFigureAreas.begin(), index);
         auto removedArea = *removedAreaItr;
@@ -81,6 +105,11 @@ private:
         }
     }
 
+ /*!
+Отрисовывает графический примитив
+\param figure графический примитив
+\return <i>Area</i>
+*/
     Area drawFigure(const std::shared_ptr<GraphicPrimitive::Figure>& figure) {
         switch (figure->type()) {
         case GraphicPrimitive::FigureType::None:
@@ -95,9 +124,16 @@ private:
             return m_painter.drawFigure(*dynamic_cast<GraphicPrimitive::Rectangle*>(figure.get()));
         case GraphicPrimitive::FigureType::Square:
             return m_painter.drawFigure(*dynamic_cast<GraphicPrimitive::Square*>(figure.get()));
+        default:
+            return {};
         }
     }
 
+ /*!
+Расчитывает области, которые необходимо отрисовать заново
+\param clearArea область, которая была очищена после удаления графического примитива
+\return <i>std::map<size_t, Area></i>
+*/
     std::map<size_t, Area> calcRerenderAreas(const Area& clearArea) {
         return {};
     }

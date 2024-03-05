@@ -2,8 +2,22 @@
 
 #include <math.h>
 
+
+/*!
+\brief Графические примитивы
+\author Алексей Волков
+\version 1.0
+\date Март 2024
+
+Содержит такие графические примитивы, как Point, Line, Rectangle, Circle, Square, Ellipse
+*/
 namespace GraphicPrimitive {
 
+/*!
+\brief Классы точки на плоскости
+
+Классы точки на плоскости, содержит координату x и y
+*/
 struct Point
 {
     double x = 0;

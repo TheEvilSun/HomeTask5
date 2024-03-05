@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>HomeTask5: Исходный файл Controler/Controler.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">HomeTask5
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_fc1665ff730d276f39e76ca92f5b8c12.html">Controler</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Controler.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;GraphicPrimitivesModel/GraphicPrimitivesModel.h&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="namespaceControler.html">   14</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespaceControler.html">Controler</a> {</div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classControler_1_1Controler.html">   20</a></span><span class="keyword">class </span><a class="code hl_namespace" href="namespaceControler.html">Controler</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    std::list&lt;GraphicPrimitive::FigureType&gt; m_createdFigures;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    std::shared_ptr&lt;Model::GraphicPrimitivesModel&gt; m_model;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">size_t</span> m_addConnectedIndex;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordtype">size_t</span> m_removedConnectedIndex;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_namespace" href="namespaceControler.html">Controler</a>() {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="classControler_1_1Controler.html#a5634e7a0cc96a29c3677ad191c362c15">   36</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classControler_1_1Controler.html#a5634e7a0cc96a29c3677ad191c362c15">setModel</a>(<span class="keyword">const</span> std::shared_ptr&lt;Model::GraphicPrimitivesModel&gt;&amp; model) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">if</span>(!model) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        m_model = model;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        m_addConnectedIndex = m_model-&gt;connectToAddFigure([<span class="keyword">this</span>](<span class="keywordtype">size_t</span> index){ addFigure(index); });</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        m_removedConnectedIndex = m_model-&gt;connectToRemoveFigure([<span class="keyword">this</span>](<span class="keywordtype">size_t</span> index){ removeFigure(index); });</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; m_model-&gt;count(); i++) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            addFigure(i);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="classControler_1_1Controler.html#aba25a16990db6dec99ff02a49afc3392">   54</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classControler_1_1Controler.html#aba25a16990db6dec99ff02a49afc3392">resetModel</a>() {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">if</span>(!m_model) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        m_model-&gt;disconnectToAddFigure(m_addConnectedIndex);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        m_model-&gt;disconnectToRemoveFigure(m_removedConnectedIndex);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        m_model.reset();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        m_createdFigures.clear();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="classControler_1_1Controler.html#aeeb1fc8aaaef52d7a58680022145aaf6">   74</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classControler_1_1Controler.html#aeeb1fc8aaaef52d7a58680022145aaf6">createLine</a>(<a class="code hl_struct" href="structGraphicPrimitive_1_1Point.html">GraphicPrimitive::Point</a> p1, <a class="code hl_struct" href="structGraphicPrimitive_1_1Point.html">GraphicPrimitive::Point</a> p2, uint32_t penColor, <a class="code hl_enumeration" href="namespaceGraphicPrimitive.html#a1a5635085d3fb3b09eeb3ca2f52f8966">GraphicPrimitive::PenType</a> penType, <span class="keywordtype">float</span> penWidth) {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">if</span>(m_model) {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            m_model-&gt;addFigure(<a class="code hl_class" href="classGraphicPrimitive_1_1Line.html">GraphicPrimitive::Line</a>(p1, p2, penColor, penType, penWidth));</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        }</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="foldopen" id="foldopen00092" data-start="{" data-end="}">
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classControler_1_1Controler.html#a1a33f0dcea955a0181bed40ebf6697d5">   92</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classControler_1_1Controler.html#a1a33f0dcea955a0181bed40ebf6697d5">createRectnagle</a>(<a class="code hl_struct" href="structGraphicPrimitive_1_1Point.html">GraphicPrimitive::Point</a> corner, <span class="keywordtype">float</span> width, <span class="keywordtype">float</span> height, uint32_t penColor, <a class="code hl_enumeration" href="namespaceGraphicPrimitive.html#a1a5635085d3fb3b09eeb3ca2f52f8966">GraphicPrimitive::PenType</a> penType, <span class="keywordtype">float</span> penWidth, uint32_t brushColor, <a class="code hl_enumeration" href="namespaceGraphicPrimitive.html#a1187277ff2b50f95f09d914b912f0e53">GraphicPrimitive::BrushType</a> brushType) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        <span class="keywordflow">if</span>(m_model) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>            m_model-&gt;addFigure(<a class="code hl_class" href="classGraphicPrimitive_1_1Rectangle.html">GraphicPrimitive::Rectangle</a>(corner, width, height, penColor, penType, penWidth, brushColor, brushType));</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="foldopen" id="foldopen00109" data-start="{" data-end="}">
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="classControler_1_1Controler.html#a7a478482df6f1c780b87479f3ccf7495">  109</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classControler_1_1Controler.html#a7a478482df6f1c780b87479f3ccf7495">createSquare</a>(<a class="code hl_struct" href="structGraphicPrimitive_1_1Point.html">GraphicPrimitive::Point</a> corner, <span class="keywordtype">float</span> width, uint32_t penColor, <a class="code hl_enumeration" href="namespaceGraphicPrimitive.html#a1a5635085d3fb3b09eeb3ca2f52f8966">GraphicPrimitive::PenType</a> penType, <span class="keywordtype">float</span> penWidth, uint32_t brushColor, <a class="code hl_enumeration" href="namespaceGraphicPrimitive.html#a1187277ff2b50f95f09d914b912f0e53">GraphicPrimitive::BrushType</a> brushType) {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="keywordflow">if</span>(m_model) {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            m_model-&gt;addFigure(<a class="code hl_class" href="classGraphicPrimitive_1_1Square.html">GraphicPrimitive::Square</a>(corner, width, penColor, penType, penWidth, brushColor, brushType));</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
+</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="foldopen" id="foldopen00126" data-start="{" data-end="}">
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="classControler_1_1Controler.html#afa8669d123b3012d97764b9d73fb3cb8">  126</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classControler_1_1Controler.html#afa8669d123b3012d97764b9d73fb3cb8">createCircle</a>(<a class="code hl_struct" href="structGraphicPrimitive_1_1Point.html">GraphicPrimitive::Point</a> center, <span class="keywordtype">float</span> radius, uint32_t penColor, <a class="code hl_enumeration" href="namespaceGraphicPrimitive.html#a1a5635085d3fb3b09eeb3ca2f52f8966">GraphicPrimitive::PenType</a> penType, <span class="keywordtype">float</span> penWidth, uint32_t brushColor, <a class="code hl_enumeration" href="namespaceGraphicPrimitive.html#a1187277ff2b50f95f09d914b912f0e53">GraphicPrimitive::BrushType</a> brushType) {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordflow">if</span>(m_model) {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            m_model-&gt;addFigure(<a class="code hl_class" href="classGraphicPrimitive_1_1Circle.html">GraphicPrimitive::Circle</a>(center, radius, penColor, penType, penWidth, brushColor, brushType));</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        }</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
+</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="foldopen" id="foldopen00144" data-start="{" data-end="}">
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="classControler_1_1Controler.html#acd2830310ee6ce6c35982d9a09ca6bfe">  144</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classControler_1_1Controler.html#acd2830310ee6ce6c35982d9a09ca6bfe">createEllipse</a>(<a class="code hl_struct" href="structGraphicPrimitive_1_1Point.html">GraphicPrimitive::Point</a> center, <span class="keywordtype">float</span> radiusX, <span class="keywordtype">float</span> radiusY, uint32_t penColor, <a class="code hl_enumeration" href="namespaceGraphicPrimitive.html#a1a5635085d3fb3b09eeb3ca2f52f8966">GraphicPrimitive::PenType</a> penType, <span class="keywordtype">float</span> penWidth, uint32_t brushColor, <a class="code hl_enumeration" href="namespaceGraphicPrimitive.html#a1187277ff2b50f95f09d914b912f0e53">GraphicPrimitive::BrushType</a> brushType) {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        <span class="keywordflow">if</span>(m_model) {</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>            m_model-&gt;addFigure(<a class="code hl_class" href="classGraphicPrimitive_1_1Ellipse.html">GraphicPrimitive::Ellipse</a>(center, radiusX, radiusY, penColor, penType, penWidth, brushColor, brushType));</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>        }</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    }</div>
+</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="keywordtype">void</span> addFigure(<span class="keywordtype">size_t</span> index) {</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        <span class="keyword">auto</span> figure = m_model-&gt;data(index);</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="keywordflow">switch</span> (figure-&gt;type()) {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespaceGraphicPrimitive.html#a2393c777113e952a9b7ec8c91a29e7a3a6adf97f83acf6453d4a6a4b1070f3754">GraphicPrimitive::FigureType::None</a>:</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            m_createdFigures.push_back(figure-&gt;type());</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        }</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    }</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keywordtype">void</span> removeFigure(<span class="keywordtype">size_t</span> index) {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keyword">auto</span> removedFigureItr = std::next(m_createdFigures.begin(), index);</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        m_createdFigures.erase(removedFigureItr);</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>    }</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>};</div>
+</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>}</div>
+</div>
+<div class="ttc" id="aclassControler_1_1Controler_html_a1a33f0dcea955a0181bed40ebf6697d5"><div class="ttname"><a href="classControler_1_1Controler.html#a1a33f0dcea955a0181bed40ebf6697d5">Controler::Controler::createRectnagle</a></div><div class="ttdeci">void createRectnagle(GraphicPrimitive::Point corner, float width, float height, uint32_t penColor, GraphicPrimitive::PenType penType, float penWidth, uint32_t brushColor, GraphicPrimitive::BrushType brushType)</div><div class="ttdef"><b>Definition</b> Controler.h:92</div></div>
+<div class="ttc" id="aclassControler_1_1Controler_html_a5634e7a0cc96a29c3677ad191c362c15"><div class="ttname"><a href="classControler_1_1Controler.html#a5634e7a0cc96a29c3677ad191c362c15">Controler::Controler::setModel</a></div><div class="ttdeci">void setModel(const std::shared_ptr&lt; Model::GraphicPrimitivesModel &gt; &amp;model)</div><div class="ttdef"><b>Definition</b> Controler.h:36</div></div>
+<div class="ttc" id="aclassControler_1_1Controler_html_a7a478482df6f1c780b87479f3ccf7495"><div class="ttname"><a href="classControler_1_1Controler.html#a7a478482df6f1c780b87479f3ccf7495">Controler::Controler::createSquare</a></div><div class="ttdeci">void createSquare(GraphicPrimitive::Point corner, float width, uint32_t penColor, GraphicPrimitive::PenType penType, float penWidth, uint32_t brushColor, GraphicPrimitive::BrushType brushType)</div><div class="ttdef"><b>Definition</b> Controler.h:109</div></div>
+<div class="ttc" id="aclassControler_1_1Controler_html_aba25a16990db6dec99ff02a49afc3392"><div class="ttname"><a href="classControler_1_1Controler.html#aba25a16990db6dec99ff02a49afc3392">Controler::Controler::resetModel</a></div><div class="ttdeci">void resetModel()</div><div class="ttdef"><b>Definition</b> Controler.h:54</div></div>
+<div class="ttc" id="aclassControler_1_1Controler_html_acd2830310ee6ce6c35982d9a09ca6bfe"><div class="ttname"><a href="classControler_1_1Controler.html#acd2830310ee6ce6c35982d9a09ca6bfe">Controler::Controler::createEllipse</a></div><div class="ttdeci">void createEllipse(GraphicPrimitive::Point center, float radiusX, float radiusY, uint32_t penColor, GraphicPrimitive::PenType penType, float penWidth, uint32_t brushColor, GraphicPrimitive::BrushType brushType)</div><div class="ttdef"><b>Definition</b> Controler.h:144</div></div>
+<div class="ttc" id="aclassControler_1_1Controler_html_aeeb1fc8aaaef52d7a58680022145aaf6"><div class="ttname"><a href="classControler_1_1Controler.html#aeeb1fc8aaaef52d7a58680022145aaf6">Controler::Controler::createLine</a></div><div class="ttdeci">void createLine(GraphicPrimitive::Point p1, GraphicPrimitive::Point p2, uint32_t penColor, GraphicPrimitive::PenType penType, float penWidth)</div><div class="ttdef"><b>Definition</b> Controler.h:74</div></div>
+<div class="ttc" id="aclassControler_1_1Controler_html_afa8669d123b3012d97764b9d73fb3cb8"><div class="ttname"><a href="classControler_1_1Controler.html#afa8669d123b3012d97764b9d73fb3cb8">Controler::Controler::createCircle</a></div><div class="ttdeci">void createCircle(GraphicPrimitive::Point center, float radius, uint32_t penColor, GraphicPrimitive::PenType penType, float penWidth, uint32_t brushColor, GraphicPrimitive::BrushType brushType)</div><div class="ttdef"><b>Definition</b> Controler.h:126</div></div>
+<div class="ttc" id="aclassGraphicPrimitive_1_1Circle_html"><div class="ttname"><a href="classGraphicPrimitive_1_1Circle.html">GraphicPrimitive::Circle</a></div><div class="ttdoc">Окружность</div><div class="ttdef"><b>Definition</b> Figure.h:284</div></div>
+<div class="ttc" id="aclassGraphicPrimitive_1_1Ellipse_html"><div class="ttname"><a href="classGraphicPrimitive_1_1Ellipse.html">GraphicPrimitive::Ellipse</a></div><div class="ttdoc">Эллипс</div><div class="ttdef"><b>Definition</b> Figure.h:385</div></div>
+<div class="ttc" id="aclassGraphicPrimitive_1_1Line_html"><div class="ttname"><a href="classGraphicPrimitive_1_1Line.html">GraphicPrimitive::Line</a></div><div class="ttdoc">Отрезок</div><div class="ttdef"><b>Definition</b> Figure.h:164</div></div>
+<div class="ttc" id="aclassGraphicPrimitive_1_1Rectangle_html"><div class="ttname"><a href="classGraphicPrimitive_1_1Rectangle.html">GraphicPrimitive::Rectangle</a></div><div class="ttdoc">Прямоугольник</div><div class="ttdef"><b>Definition</b> Figure.h:222</div></div>
+<div class="ttc" id="aclassGraphicPrimitive_1_1Square_html"><div class="ttname"><a href="classGraphicPrimitive_1_1Square.html">GraphicPrimitive::Square</a></div><div class="ttdoc">Квадрат</div><div class="ttdef"><b>Definition</b> Figure.h:334</div></div>
+<div class="ttc" id="anamespaceControler_html"><div class="ttname"><a href="namespaceControler.html">Controler</a></div><div class="ttdoc">Классы контролеры для работы с моделью GraphicPrimitivesModel</div><div class="ttdef"><b>Definition</b> Controler.h:14</div></div>
+<div class="ttc" id="anamespaceGraphicPrimitive_html_a1187277ff2b50f95f09d914b912f0e53"><div class="ttname"><a href="namespaceGraphicPrimitive.html#a1187277ff2b50f95f09d914b912f0e53">GraphicPrimitive::BrushType</a></div><div class="ttdeci">BrushType</div><div class="ttdoc">Набор возможных стилей заливки</div><div class="ttdef"><b>Definition</b> Figure.h:16</div></div>
+<div class="ttc" id="anamespaceGraphicPrimitive_html_a1a5635085d3fb3b09eeb3ca2f52f8966"><div class="ttname"><a href="namespaceGraphicPrimitive.html#a1a5635085d3fb3b09eeb3ca2f52f8966">GraphicPrimitive::PenType</a></div><div class="ttdeci">PenType</div><div class="ttdoc">Набор возможных стилей кисти</div><div class="ttdef"><b>Definition</b> Figure.h:8</div></div>
+<div class="ttc" id="anamespaceGraphicPrimitive_html_a2393c777113e952a9b7ec8c91a29e7a3a6adf97f83acf6453d4a6a4b1070f3754"><div class="ttname"><a href="namespaceGraphicPrimitive.html#a2393c777113e952a9b7ec8c91a29e7a3a6adf97f83acf6453d4a6a4b1070f3754">GraphicPrimitive::FigureType::None</a></div><div class="ttdeci">@ None</div><div class="ttdoc">Невалидный тип</div></div>
+<div class="ttc" id="astructGraphicPrimitive_1_1Point_html"><div class="ttname"><a href="structGraphicPrimitive_1_1Point.html">GraphicPrimitive::Point</a></div><div class="ttdoc">Классы точки на плоскости</div><div class="ttdef"><b>Definition</b> Point.h:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

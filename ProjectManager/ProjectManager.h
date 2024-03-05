@@ -6,7 +6,21 @@
 #include "GUI/View.h"
 #include "Controler/Controler.h"
 
+/*!
+\brief Компоненты управления проектом
+\author Алексей Волков
+\version 1.0
+\date Март 2024
+
+Содержит компоненты для работы с проектом
+*/
 namespace Project {
+
+/*!
+\brief Класс проекта
+
+Класс, который содержит модель графических примитивов, графическое представление примитивов и управление примитивами
+*/
 class Project {
     std::shared_ptr<Model::GraphicPrimitivesModel> m_model;
     std::shared_ptr<GUI::View> m_view;
@@ -29,6 +43,10 @@ public:
         m_controler->setModel(m_model);
     }
 private:
+/*!
+Парсит файл проекта
+\return <i>void</i>
+*/
     void parseProjetcFile() {
         uint32_t width;
         uint32_t height;
@@ -42,23 +60,47 @@ private:
     }
 };
 
+/*!
+\brief Классы проекта
+
+Класс, который содержит модель графических примитивов, графическое представление примитивов и управление примитивами
+*/
 class ProjectManager {
     std::map<size_t, Project> m_projects;
 
 public:
+/*!
+Создает пустой проект
+\return <i>void</i>
+*/
     void createProject() {
         m_projects[m_projects.size()] = {};
     }
 
+/*!
+Загружает проект из файла
+\param projectFileName имя файла проекта
+\return <i>void</i>
+*/
     void openProject(const std::string& projectFileName) {
         m_projects[m_projects.size()] = { projectFileName };
     }
 
+/*!
+Закрывает проект
+\param index идентификатор проекта
+\return <i>void</i>
+*/
     void closeProject(size_t index) {
         saveProject(index);
         m_projects.erase(index);
     }
 
+/*!
+Сохраняет проект
+\param index идентификатор проекта
+\return <i>void</i>
+*/
     void saveProject(size_t index) {
 
     }
